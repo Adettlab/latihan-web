@@ -56,31 +56,6 @@
           background-color: #E0E3E7 ;
       }
     </style>
-    <script>
-      src="https://code.jquery.com/jquery-3.7.0.js"
-      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-      crossorigin="anonymous"
-    </script>
-
-    <script>
-      function calculateAverage() {
-          const nilaiValue = { A: 4.00, B: 3.00, C: 2.00, D: 1.00, E: 0};
-          const nama = document.getElementById("nama").value;
-          const MataKuliah = document.getElementById("MataKuliah").value;
-          const Nilai = document.getElementById("Nilai").value;
-  
-          if (Nilai in nilaiValue) {
-              const gradeValue = nilaiValue[Nilai];
-              const table = document.getElementById("result");
-
-              const newRow = table.insertRow(1);// Insert a row at the end of the table
-              newRow.insertCell(0).innerHTML = nama;
-              newRow.insertCell(1).innerHTML = MataKuliah;
-              newRow.insertCell(2).innerHTML = Nilai;
-              newRow.insertCell(3).innerHTML = gradeValue.toFixed(2);
-          }
-      }
-  </script>
  
   </head>
 
